@@ -13,7 +13,7 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
             "id BIGINT AUTO_INCREMENT PRIMARY KEY, " +
             "name VARCHAR(255), " +
             "lastName VARCHAR(255), " +
-            "age TINYINT)";// yjdfz dtnrf
+            "age TINYINT)";// новый комментарий git push origin new-feature
     private final static String DROP_TABLE = "DROP TABLE IF EXISTS users";
     private final static String INSERT= "INSERT INTO users (name, lastName, age) VALUES (?, ?, ?)";
     private final static String DELETE = "DELETE FROM users WHERE id = ?";
