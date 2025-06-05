@@ -1,6 +1,7 @@
 package jm.task.core.jdbc;
 
 import jm.task.core.jdbc.dao.UserDao;
+import jm.task.core.jdbc.dao.UserDaoHibernateImpl;
 import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 import jm.task.core.jdbc.model.User;
 
@@ -16,6 +17,6 @@ public class Main {
         users.forEach(System.out::println);
 
         userDao.cleanUsersTable();
-        userDao.dropUsersTable();// реализуйте алгоритм здесь
+        userDao.dropUsersTable();
     }
 }
